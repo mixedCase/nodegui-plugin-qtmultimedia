@@ -1,7 +1,9 @@
 #pragma once
 #include <napi.h>
 #include <nodegui/QtWidgets/QWidget/qwidget_macro.h>
+
 #include <QPointer>
+
 #include "nstatusbar.hpp"
 
 class QStatusBarWrap : public Napi::ObjectWrap<QStatusBarWrap> {

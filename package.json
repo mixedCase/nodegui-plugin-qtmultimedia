@@ -1,7 +1,7 @@
 {
-  "name": "nodegui-plugin",
+  "name": "nodegui-plugin-qtmultimedia",
   "version": "1.0.0",
-  "description": "A sample native plugin example for NodeGUI",
+  "description": "NodeGUI oriented wrapper around the QtMultimedia API",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
@@ -9,7 +9,7 @@
     "build:addon": "cross-env CMAKE_BUILD_PARALLEL_LEVEL=8 cmake-js compile",
     "dev": "npm run build && qode dist/demo.js"
   },
-  "author": "Atul R",
+  "author": "Andrés Rodríguez",
   "license": "MIT",
   "peerDependencies": {
     "@nodegui/nodegui": "*"

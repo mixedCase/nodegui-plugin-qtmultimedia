@@ -1,0 +1,8 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = cr
+
+[*.{hpp,cpp,h,ts,js,json}]
+indent_size = 2
