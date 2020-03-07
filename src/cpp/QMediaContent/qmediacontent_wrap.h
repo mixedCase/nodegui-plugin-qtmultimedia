@@ -3,11 +3,11 @@
 
 #include <QMediaContent>
 
-#include "nmediacontent.hpp"
 #include "nodegui/Extras/Utils/nutils.h"
 #include "nodegui/core/Component/component_macro.h"
 
-class DLL_EXPORT QMediaContentWrap : public Napi::ObjectWrap<QMediaContent> {
+class DLL_EXPORT QMediaContentWrap
+    : public Napi::ObjectWrap<QMediaContentWrap> {
   COMPONENT_WRAPPED_METHODS_DECLARATION
  private:
   std::unique_ptr<QMediaContent> instance;

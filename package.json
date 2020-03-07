@@ -1,18 +1,19 @@
 {
   "name": "nodegui-plugin-qtmultimedia",
   "version": "1.0.0",
-  "description": "NodeGUI oriented wrapper around the QtMultimedia API",
+  "description": "QtMultimedia plugin for NodeGui",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc && npm run build:addon",
     "build:addon": "cross-env CMAKE_BUILD_PARALLEL_LEVEL=8 cmake-js compile",
-    "dev": "npm run build && qode dist/demo.js"
+    "dev": "npm run build && qode dist/demo.js",
+    "postinstall": "node ./scripts/install.js"
   },
   "author": "Andrés Rodríguez",
   "license": "MIT",
   "peerDependencies": {
-    "@nodegui/nodegui": "*"
+    "@nodegui/nodegui": ">=0.15.0"
   },
   "dependencies": {
     "cmake-js": "^5.3.2",
@@ -20,7 +21,7 @@
     "node-addon-api": "^2.0.0"
   },
   "devDependencies": {
-    "@nodegui/nodegui": "^0.12.1",
+    "@nodegui/nodegui": "^0.15.2",
     "@types/node": "^13.1.6",
     "typescript": "^3.7.3"
   }
