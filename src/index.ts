@@ -1,1 +1,1 @@
-export { QStatusBar, QStatusBarSignals } from "./lib/QStatusBar";
+export { QMediaContent } from "./lib/QMediaContent";
