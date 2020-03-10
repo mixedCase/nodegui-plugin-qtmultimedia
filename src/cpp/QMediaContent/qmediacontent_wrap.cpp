@@ -1,7 +1,9 @@
 #include "qmediacontent_wrap.h"
 
-#include <QMediaContent>
 #include <napi.h>
+
+#include <QMediaContent>
+
 #include "nodegui/Extras/Utils/nutils.h"
 
 Napi::FunctionReference QMediaContentWrap::constructor;

@@ -19,6 +19,8 @@ add_library(${PLUGIN_ADDON_NAME} SHARED
     "${CMAKE_JS_SRC}"
     "${PROJECT_SOURCE_DIR}/src/cpp/main.cpp"
     "${PROJECT_SOURCE_DIR}/src/cpp/QMediaContent/qmediacontent_wrap.cpp"
+    "${PROJECT_SOURCE_DIR}/src/cpp/QMediaPlayer/qmediaplayer_wrap.cpp"
+    "${PROJECT_SOURCE_DIR}/src/cpp/QMediaPlayer/nmediaplayer.hpp"
 ) 
 
 AddPluginConfig(${PLUGIN_ADDON_NAME})

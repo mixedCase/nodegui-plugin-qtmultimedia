@@ -2,6 +2,7 @@ import addon from "./utils/addon";
 import {
   NativeElement,
   Component,
+  QUrl,
 } from "@nodegui/nodegui";
 
 /**
@@ -20,13 +21,18 @@ const { QMediaContent } = require("nodegui-plugin-qtmultimedia");
 const mediaContent = new QMediaContent();
 ```
  */
-export class QMediaContent extends Component {
+export class QMediaPlayer extends Component {
   native: NativeElement;
   constructor() {
     super();
-    this.native = new addon.QMediaContent();
+    this.native = new addon.QMediaPlayer();
   }
-  isNull(): boolean {
-    return this.native.isNull();
+
+  play(): void {
+    return this.native.play();
+  }
+
+  setMedia(url: QUrl): void {
+    return this.native.setMedia(url);
   }
 }
